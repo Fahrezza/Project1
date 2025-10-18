@@ -1,0 +1,63 @@
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 18px;     /* semula 25px */
+  height: 2px;     /* semula 3px */
+  background-color: black;
+  margin: 4px;     /* biar jarak antar garis juga proporsional */
+  transition: all 0.3s ease;
+}
+
+
+/* Saat tampilan mobile */
+@media (max-width: 768px) {
+  nav ul {
+    position: absolute;
+    top: 60px; /* di bawah navbar */
+    right: 20px;
+    flex-direction: column;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  nav ul.nav-active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  nav ul li {
+    margin: 2px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+  .burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.toggle .line2 {
+    opacity: 0;
+  }
+
+  .burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
