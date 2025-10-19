@@ -107,6 +107,7 @@ font-size: 2rem;
     border-radius: 5px;
 }
 .nav ul{
+    
     list-style: none;
     display: flex;
     gap: 3rem  ;
@@ -121,16 +122,21 @@ font-size: 2rem;
 
 .logo a{
     color: var(--primaryTextColor);
+       text-decoration: none;
 
 }
 
 nav ul li{
     display: flex;
     align-items: center;
+    
+  
+
 }
 
 nav ul li a{
     color: var(--primaryTextColor);
+    text-decoration: none;
 }
 
 .burger div{

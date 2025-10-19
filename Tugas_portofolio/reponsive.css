@@ -1,6 +1,6 @@
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .burger {
@@ -9,19 +9,19 @@ nav ul {
 }
 
 .burger div {
-  width: 18px;     /* semula 25px */
-  height: 2px;     /* semula 3px */
+  width: 18px;    
+  height: 2px;     
   background-color: black;
-  margin: 4px;     /* biar jarak antar garis juga proporsional */
+  margin: 4px;    
   transition: all 0.3s ease;
 }
 
 
-/* Saat tampilan mobile */
+/* tampilan mobile */
 @media (max-width: 768px) {
   nav ul {
     position: absolute;
-    top: 60px; /* di bawah navbar */
+    top: 60px; 
     right: 20px;
     flex-direction: column;
     background-color: white;
@@ -48,7 +48,7 @@ nav ul {
     display: block;
   }
 }
-
+/* burger x */
   .burger.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
